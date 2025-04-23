@@ -203,6 +203,109 @@ footer {
   font-size: 1rem;
   border-top: 2px solid #00ffe7;
 }
+footer .uk-flag {
+  font-size: 1.2em;
+  vertical-align: middle;
+  margin-left: 0.4em;
+}
+
+/* Use Cases Grid - match Our Services style */
+.use-cases {
+  background: #16163a;
+  padding: 4rem 2rem;
+}
+.use-cases h2 {
+  color: #00ffe7;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 2.5rem;
+}
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+.use-case-card {
+  background: #1a1a3d;
+  border: 1.5px solid #00ffe7;
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 16px #00ffe733;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.use-case-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 6px 32px #ff00c899;
+}
+.use-case-card h3 {
+  color: #ff00c8;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 1rem;
+}
+.use-case-card p {
+  color: #e0e0e0;
+}
+
+/* Team Section Styles */
+.team {
+  background: #16163a;
+  padding: 4rem 2rem;
+}
+.team h2 {
+  color: #00ffe7;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 2.5rem;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  justify-items: center;
+}
+.team-member {
+  background: #1a1a3d;
+  border: 2px solid #00ffe7;
+  border-radius: 18px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  box-shadow: 0 2px 16px #00ffe733;
+  text-align: center;
+  max-width: 350px;
+  width: 100%;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.team-member:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 6px 32px #ff00c899;
+}
+.team-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ff00c8;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 12px #ff00c855;
+}
+.founder-name {
+  font-size: 1.5rem;
+  color: #ff00c8;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0.5rem;
+}
+.founder-title a {
+  font-size: 1.25rem;
+  color: #00ffe7;
+  text-decoration: none;
+}
+.founder-title a:hover {
+  text-decoration: underline;
+}
+.founder-desc {
+  font-size: 1.1rem;
+  color: #e0e0e0;
+  margin-top: 0.7rem;
+}
 @media (max-width: 700px) {
   .nav-container {
     flex-direction: column;
@@ -216,5 +319,8 @@ footer {
   }
   .hero {
     padding: 4rem 1rem 2rem 1rem;
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 }
