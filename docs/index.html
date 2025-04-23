@@ -73,30 +73,13 @@
       </div>
     </div>
   </section>
-  <section id="why" class="why">
-    <div class="container">
-      <h2>Why Choose NelixAI?</h2>
-      <ul>
-        <li><span>Expertise:</span> Specialists in AI/ML security and modern cyber threats.</li>
-        <li><span>Modern Approach:</span> Leveraging the latest tools and techniques for advanced pentesting.</li>
-        <li><span>Confidentiality:</span> Strict adherence to privacy and data protection standards.</li>
-        <li><span>Actionable Reports:</span> Clear, prioritized recommendations for your team.</li>
-      </ul>
-    </div>
-  </section>
-  <section id="about" class="about">
-    <div class="container">
-      <h2>About Us</h2>
-      <p>NelixAI is a team of cybersecurity professionals with deep expertise in artificial intelligence and machine learning. We help organizations secure their AI-driven products and infrastructure against evolving threats in the digital age.</p>
-    </div>
-  </section>
   <section id="contact" class="contact">
     <div class="container">
       <h2>Contact</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="How can we help you?" required></textarea>
+      <form name="contact" method="POST" data-netlify="true">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="How can we help you?" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
@@ -106,6 +89,5 @@
       <p>&copy; 2025 NelixAI. Cassia ltd, a company registered in England, U.K. <span class="uk-flag">🇬🇧</span></p>
     </div>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>
